@@ -26,7 +26,7 @@ pipeline{
 		stage("Deploying to rancher"){
 			steps{
 				script{
-					sh 'kubectl rollout restart deploy deploy01 -n swe-namespace'
+					sh 'kubectl rollout restart deploy surveydeployment -n survey'
 				}
 			}
 		}
