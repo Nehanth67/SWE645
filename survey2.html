@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CS Department Survey</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h2>CS Department Survey</h2>
+
+    <div class="department-heading">
+      <form>
+        <div class="form-group">
+          <label for="username">Username:</label>
+          <input type="text" id="username" class="form-control" required>
+        </div>
+
+        <div class="form-group">
+          <label for="address">Street Address:</label>
+          <input type="text" id="address" class="form-control" required>
+        </div>
+
+        <div class="form-group">
+          <label for="city">City:</label>
+          <input type="text" id="city" class="form-control" required>
+        </div>
+
+        <div class="form-group">
+          <label for="state">State:</label>
+          <input type="text" id="state" class="form-control" required>
+        </div>
+
+        <div class="form-group">
+          <label for="zip">Zip:</label>
+          <input type="text" id="zip" class="form-control" required>
+        </div>
+
+        <div class="form-group">
+          <label for="telephone">Telephone Number:</label>
+          <input type="tel" id="telephone" class="form-control" required>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" class="form-control" required>
+        </div>
+
+        <div class="form-group">
+          <label for="url">URL:</label>
+          <input type="url" id="url" class="form-control" required>
+        </div>
+
+        <div class="form-group">
+          <label for="date">Date of Survey:</label>
+          <input type="date" id="date" class="form-control" required>
+        </div>
+
+        <div class="form-group">
+          <label for="likes">What did you like most about the campus?</label><br>
+          <div class="form-check form-check-inline">
+            <input type="checkbox" id="students" class="form-check-input">
+            <label for="students" class="form-check-label">Students</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input type="checkbox" id="location" class="form-check-input">
+            <label for="location" class="form-check-label">Location</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input type="checkbox" id="campus" class="form-check-input">
+            <label for="campus" class="form-check-label">Campus</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input type="checkbox" id="atmosphere" class="form-check-input">
+            <label for="atmosphere" class="form-check-label">Atmosphere</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input type="checkbox" id="dorms" class="form-check-input">
+            <label for="dorms" class="form-check-label">Dorm Rooms</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input type="checkbox" id="sports" class="form-check-input">
+            <label for="sports" class="form-check-label">Sports</label>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="interest">How did you become interested in the university?</label><br>
+          <div class="form-check form-check-inline">
+            <input type="radio" id="friends" name="interest" class="form-check-input">
+            <label for="friends" class="form-check-label">Friends</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input type="radio" id="television" name="interest" class="form-check-input">
+            <label for="television" class="form-check-label">Television</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input type="radio" id="internet" name="interest" class="form-check-input">
+            <label for="internet" class="form-check-label">Internet</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input type="radio" id="other" name="interest" class="form-check-input">
+            <label for="other" class="form-check-label">Other</label>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="comments">Additional Comments:</label>
+          <textarea id="comments" class="form-control" rows="4"></textarea>
+        </div>
+
+        <div class="form-group">
+          <label for="recommendation">Likelihood of Recommending this School:</label>
+          <select id="recommendation" class="form-control">
+            <option>Very Likely</option>
+            <option>Likely</option>
+            <option>Unlikely</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="graduation">High-School Graduation:</label>
+          <input type="text" list="months" id="graduation" class="form-control" required>
+          <datalist id="months">
+            <option value="January">
+            <option value="February">
+            <option value="March">
+            <option value="April">
+            <option value="May">
+            <option value="June">
+            <option value="July">
+            <option value="August">
+            <option value="September">
+            <option value="October">
+            <option value="November">
+            <option value="December">
+          </datalist>
+          <input type="text" id="year" class="form-control" placeholder="Year" required>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>

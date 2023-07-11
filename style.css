@@ -1,0 +1,20 @@
+
+body {
+  background-color: rgb(248, 252, 253);
+}
+
+h2 {
+  color: #006633;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.department-heading {
+  border: 5px solid #f0cc03;
+  padding: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.form-control {
+  margin-bottom: 10px;
+}
