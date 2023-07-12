@@ -12,14 +12,14 @@ pipeline{
 					sh 'jar -cvf swe645part2.war *'
 					sh 'echo ${BUILD_TIMESTAMP}'
 					sh 'docker login -u nehanth67 -p ${DOCKERHUB_PASS}'
-					sh 'docker build -t Nehanth67/swe645 .'
+					sh 'docker build -t nehanth67/swe645 .'
 				}
 			}
 		}
 		stage("Pushing image to docker"){
 			steps{
 				script{
-					sh 'docker push Nehanth67/swe645'
+					sh 'docker push nehanth67/swe645'
 				}
 			}
 		}
