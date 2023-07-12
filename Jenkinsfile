@@ -9,7 +9,7 @@ pipeline{
 				script{
 					checkout scm
 					sh 'rm -rf *.war'
-					sh 'jar -cvf swe645part2.war *'
+					sh 'jar -cvf SWE645HW2.war *'
 					sh 'echo ${BUILD_TIMESTAMP}'
 					sh 'docker login -u nehanth67 -p ${DOCKERHUB_PASS}'
 					sh 'docker build -t nehanth67/swe645 .'
